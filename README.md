@@ -16,3 +16,9 @@ templates (http://www.google.com/tagmanager/)
 
 That's it for the most part. If for any reason you want to override
 the template used to render the tag, it's called `gtm/gtm.html`.
+
+Optionally, you can pass the google tag id as a parameter to the
+templatetag like this:
+
+    {% gtm "GTM-ABC123" %}
+
