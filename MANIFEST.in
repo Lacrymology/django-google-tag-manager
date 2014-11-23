@@ -1,1 +1,10 @@
+include AUTHORS
 include README.md
+include LICENSE
+include Makefile
+include tox.ini
+recursive-include docs *
+recursive-include requirements *
+recursive-include gtm/templates/gtm *.html
+recursive-include gtm/tests/media *.js *.css *.png *.coffee
+recursive-include gtm/tests/test_templates *.html
