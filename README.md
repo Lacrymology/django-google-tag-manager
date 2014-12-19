@@ -10,7 +10,7 @@ templates (http://www.google.com/tagmanager/)
 2. add `'gtm'` to your `INSTALLED_APPS` setting.
 3. set `GOOGLE_TAG_ID` to your Google Tag Container Id. It
    should look something like `GTM_XXXXXX`
-4. In your templates (probably in your base template) you `{% include
+4. In your templates (probably in your base template) you `{% load
    gtm_tags %}` and then `{% gtm %}` just below your `<body>` opening tag.
 5. Profit
 
