@@ -14,9 +14,10 @@ def gtm_tag(context, google_tag_id=None):
 
     if google_tag_id is None:
         google_tag_id = getattr(settings, 'GOOGLE_TAG_ID', None)
-    return {
-        'google_tag_id': google_tag_id
-    }
+
+    context['google_tag_id'] = google_tag_id
+
+    return context
 
 
 ri("gtm/gtm.html", name='gtm', takes_context=True)(gtm_tag)
